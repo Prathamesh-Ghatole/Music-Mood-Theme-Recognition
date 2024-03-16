@@ -14,8 +14,13 @@ python3 -m venv env/
 pip install -r requirements.txt
 source env/bin/activate
 ```
+3. Setup your config.py file
+```
+cp config.py.sample config.py
+```
+and fill in the necessary information
 
-2. Run the Project
+4. Run the Project
 ```
 python main.py
 ```
