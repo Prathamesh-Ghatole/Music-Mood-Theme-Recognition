@@ -39,12 +39,12 @@ def scrape_song_lyrics(url):
     )
     song_name = soup.select('h1[class*="SongHeaderdesktop__Title-sc-"]')[0].get_text()
 
-    print(f"Scraping {song_name} by {artist_name}...")
+    # print(f"Scraping {song_name} by {artist_name}...")
 
     lyrics = soup.select('div[class*="Lyrics__Container-sc"]')
     lyrics = "\n".join([lyric.get_text(separator="\n") for lyric in lyrics])
 
-    print(lyrics)
+    # print(lyrics)
 
     return {"song_name": song_name, "artist_name": artist_name, "lyrics": lyrics}
 
