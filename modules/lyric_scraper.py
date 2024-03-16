@@ -55,4 +55,6 @@ def get_lyrics(song_name):
         lyrics = scrape_song_lyrics(url)
         return lyrics
     else:
-        return None
+        return {"song_name": "", "artist_name": "", "lyrics": ""}
+
+    # TODO: Verify if the lyrics are fetched from the correct song
