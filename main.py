@@ -4,7 +4,7 @@ from modules.process_data import main as process_data
 
 def main():
     extract_data()
-    process_data()
+    # process_data()
 
 
 if __name__ == "__main__":
