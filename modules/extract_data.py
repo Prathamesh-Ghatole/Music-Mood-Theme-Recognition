@@ -11,6 +11,12 @@ DATASET_1_TAR_OUTPUT = "processed_data/CAL500_noAudioFeatures/"
 DATASET_2 = "data/cal500data/cal500_song_tag_annotations.txt"
 DATASET_2_OUTPUT = "processed_data/"
 
+DATASET_3 = "data/cal500data/CAL500_ChromaFeatures.tar"
+DATASET_3_OUTPUT = "processed_data/CAL500_ChromaFeatures/"
+
+DATASET_4 = "data/cal500data/CAL500_32kps.tar"
+DATASET_4_OUTPUT = "processed_data/CAL500_32kps/"
+
 
 def extract_tar_file(tar_file_path, destination_dir):
     # Validate file paths
@@ -45,6 +51,8 @@ def copy(file_path, output_dir):
 def main():
     # Extract the tar file
     extract_tar_file(DATASET_1_TAR, DATASET_1_TAR_OUTPUT)
+    extract_tar_file(DATASET_3, DATASET_3_OUTPUT)
+    extract_tar_file(DATASET_4, DATASET_4_OUTPUT)
 
     # Copy the second dataset
     copy(DATASET_2, DATASET_2_OUTPUT)
