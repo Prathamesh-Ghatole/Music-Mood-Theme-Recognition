@@ -3,3 +3,4 @@ processed_data/
 env/
 __pycache__/
 config.py
+models/
